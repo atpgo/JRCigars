@@ -11,6 +11,7 @@
         vm.user = null;
         vm.search = null;
         vm.searchData = null;
+        vm.saveSearch = saveSearch;
         vm.arr = null;
 
         initController();
@@ -54,6 +55,8 @@
             UserService.SaveSearch(searchObj)
                 .then(function () {
                     FlashService.Success('User updated');
+                    vm.search = {};
+                    getSearch();
                 })
                 .catch(function (error) {
                     FlashService.Error(error);
