@@ -17,6 +17,4 @@ $ node server.js
 **NOTE:** 
 Make sure mongodb is running on the local
 
-## License
 
-Copyright 2017, Eshwar Ch, All rights reserved.
